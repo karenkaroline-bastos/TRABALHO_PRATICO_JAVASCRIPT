@@ -1,89 +1,117 @@
-/* Estilização geral do corpo da página */
+/* ======== Estilo Geral ======== */
 body {
-    font-family: Arial, sans-serif; /* Fonte mais limpa e legível */
-    background-color: #b8d2e4; /* Cor de fundo suave */
-    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fb;
     padding: 20px;
 }
 
-/* Estilização do título principal */
+/* Título */
 h1 {
-    text-align: center; /* Centraliza o texto */
-    color: #2c3e50; /* Cor do texto */
+    text-align: center;
+    color: #2c3e50;
 }
 
-/* Estilização do título secundário */
-h2 {
-    text-align: center; /* Centraliza o texto */
-    color: #34495e; /* Cor do texto */
-    margin-bottom: 20px; /* Espaçamento inferior */
-}
-
-/* Estilo do container */
 p {
-    text-align: center; /* Centraliza o texto */
-    color: #7f8c8d; /* Cor do texto */
-    margin-bottom: 20px; /* Espaçamento inferior */
+    text-align: center;
+    color: #7f8c8d;
+    font-size: 1.2em;
 }
 
-/* Estilo geral do formulário */
+/* Subtítulos */
+h2 {
+    text-align: center;
+    color: #34495e;
+}
+
+/* ======== Formulário ======== */
 form {
-    max-width: 600px; /* Largura máxima */
-    margin: 0 auto; /* Centraliza horizontalmente */
-    background-color: #fff; /* Fundo branco */
-    padding: 20px 30px; /* Espaçamento interno */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra para dar profundidade */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Estilo dos rótulos (labels) */
-label {
-    font-weight: bold; /* Negrito */
-    color: #34495e; /* Cor do texto */
+/* Inputs e textarea */
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
 }
 
-/* Estilo para inputs de texto, data e textarea */
-input[type="text"],
-input[type="date"],
-textarea {
-    width: 100%; /* Ocupa toda a largura disponível */
-    padding: 8px 10px; /* Espaçamento interno */
-    margin-top: 4px; /* Espaçamento superior */
-    margin-bottom: 12px; /* Espaçamento inferior */
-    border: 1px solid #ccc; /* Borda cinza clara */
-    border-radius: 6px; /* Bordas arredondadas */
-    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura */
-}
-
-/* Espaçamento nos botões de rádio */
-input[type="radio"] {
-    margin-right: 5px;
-}
-
-/* Permitir redimensionamento vertical nas textareas */
-textarea {
-    resize: vertical;
-}
-
-/* Estilo do botão */
+/* ======== Botões ======== */
 button {
-    background-color: #3498db; /* Cor azul */
-    color: white; /* Texto branco */
-    padding: 10px 18px; /* Espaçamento interno */
-    border: none; /* Sem borda */
-    border-radius: 6px; /* Bordas arredondadas */
-    cursor: pointer; /* Muda o cursor ao passar por cima */
-    transition: background-color 0.3s ease; /* Transição suave no hover */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    margin: 5px;
 }
 
-/* Efeito hover no botão */
-button:hover {
-    background-color: #2980b9; /* Cor mais escura ao passar o mouse */
+/* Botão de Cadastrar */
+#cadastrar {
+    background-color: #27ae60;
 }
 
+#cadastrar:hover {
+    background-color: #219150;
+}
 
-footer {
-    text-align: center; /* Centraliza o texto */
-    margin-top: 20px; /* Espaçamento superior */
-    color: #6b98eb; /* Cor do texto */
+/* Botão de Exibir Tabela */
+#botaoTabela {
+    background-color: #2980b9;
+}
+
+#botaoTabela:hover {
+    background-color: #206694;
+}
+
+/* Botões dentro da tabela */
+table button {
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+table button:hover {
+    opacity: 0.8;
+}
+
+/* Botão Editar */
+button.editar {
+    background-color: #f39c12;
+}
+
+/* Botão Detalhes */
+button.detalhes {
+    background-color: #8e44ad;
+}
+
+/* ======== Tabela ======== */
+table {
+    width: 600px; /* Mesma largura do formulário */
+    border-collapse: collapse;
+    background-color: white;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #34495e;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f2f2f2;
 }
