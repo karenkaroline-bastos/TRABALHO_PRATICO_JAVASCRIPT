@@ -43,12 +43,21 @@ input, textarea {
     border-radius: 4px;
 }
 
+.campoPesquisa {
+    width: 600px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transform: translate(80%, 20%);
+}
+
 /* ======== Botões ======== */
 button {
     padding: 10px 20px;
     border: none;
     border-radius: 6px;
-    color: white;
+    color: rgba(66, 65, 66, 0.836);
     cursor: pointer;
     margin: 5px;
 }
@@ -64,7 +73,7 @@ button {
 
 /* Botão de Exibir Tabela */
 #botaoTabela {
-    background-color: #2980b9;
+    background-color: #0b71b6;
 }
 
 #botaoTabela:hover {
@@ -82,12 +91,12 @@ table button:hover {
 }
 
 /* Botão Editar */
-button.editar {
+td button.editarCadastro {
     background-color: #f39c12;
 }
 
 /* Botão Detalhes */
-button.detalhes {
+td button.exibir {
     background-color: #8e44ad;
 }
 

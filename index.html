@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <header>
-    <img src="/KB/KB/JavaScript/TRABALHO_PRATICO_JAVASCRIPT/TRABALHO_PRATICO_JAVASCRIPT-main/imagens/logo-removefundo.png" alt="logo" style="width:100px; vertical-align:middle; margin-right:10px;">
     <h1>Prontuário Hospitalar</h1>
 
 </header>
@@ -43,6 +42,10 @@
 
         <button id="cadastrar" type="submit">Cadastrar</button>
     </form>
+
+    <h2>Buscar Pacientes</h2>
+    <p>Buscar os pacientes cadastrados serão exibidos na tabela abaixo.</p>
+    <input class="campoPesquisa" type="text" id="searchInput" onkeyup="filterTable()" placeholder="Pesquisar...">
 
     <h2>Tabela de Pacientes Cadastrados</h2>
     <p>Os pacientes cadastrados serão exibidos na tabela abaixo.</p>

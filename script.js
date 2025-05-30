@@ -122,3 +122,24 @@ function exibirDetalhes(index) {
         `Diagnóstico: ${pessoa.diagnostico}`
     );
 }
+
+function filterTable() {
+    let input, filter, table, tr, td, i, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("tabelaCadastro");
+    tr = table.getElementsByTagName("tr");
+
+    for (i = 0; i < tr.length; i++) {
+        tr[i].style.display = ""; // Mostra todas as linhas inicialmente
+        td = tr[i].getElementsByTagName("td")[0]; // Apenas a primeira coluna
+        if (td) {
+            txtValue = td.textContent.toUpperCase();
+            if (txtValue.indexOf(filter) > -1) {
+            tr[i].style.display = "";
+        } else {
+            tr[i].style.display = "none"; // Esconde a linha se não corresponder
+        }
+        }
+    }
+}
